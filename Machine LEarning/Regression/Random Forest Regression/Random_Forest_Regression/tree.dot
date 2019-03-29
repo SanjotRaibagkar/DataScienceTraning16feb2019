@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Level <= 6.0\nmse = 22640250000.0\nsamples = 6\nvalue = 151500.0"] ;
+1 [label="Level <= 3.5\nmse = 188775510.204\nsamples = 4\nvalue = 59285.714"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Level <= 2.5\nmse = 24000000.0\nsamples = 3\nvalue = 51000.0"] ;
+1 -> 2 ;
+3 [label="Level <= 1.5\nmse = 4687500.0\nsamples = 2\nvalue = 48750.0"] ;
+2 -> 3 ;
+4 [label="mse = 0.0\nsamples = 1\nvalue = 45000.0"] ;
+3 -> 4 ;
+5 [label="mse = 0.0\nsamples = 1\nvalue = 50000.0"] ;
+3 -> 5 ;
+6 [label="mse = 0.0\nsamples = 1\nvalue = 60000.0"] ;
+2 -> 6 ;
+7 [label="mse = 0.0\nsamples = 1\nvalue = 80000.0"] ;
+1 -> 7 ;
+8 [label="Level <= 8.5\nmse = 8888888888.889\nsamples = 2\nvalue = 366666.667"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="mse = 0.0\nsamples = 1\nvalue = 300000.0"] ;
+8 -> 9 ;
+10 [label="mse = 0.0\nsamples = 1\nvalue = 500000.0"] ;
+8 -> 10 ;
+}
